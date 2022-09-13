@@ -361,6 +361,39 @@ section {
   letter-spacing: 0.03em;
 }
 
+/* Clients */
+.clients-title {
+  color: var(--link-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.client-boxes {
+  display: flex;
+}
+
+.box {
+  width: calc((100% - 150px)/6);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-right: 30px;
+  flex-wrap: nowrap;
+}
+
+.box:nth-child(1) {
+  background-image: url();
+}
+
+/* .box:hover {
+  color: var(--accent-color);
+} */
+
 /*Footer*/
 .footer {
   background-color: var(--hero-background-color);
