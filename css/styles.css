@@ -176,6 +176,21 @@ section {
   text-align: center;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.svg);
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
   text-align: center;
   color: var(--title-text-color);
@@ -378,7 +393,7 @@ section {
 }
 
 .box {
-  width: calc((100% - 150px)/6);
+  width: calc((100% - 150px) / 6);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -421,7 +436,6 @@ section {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 /* .box:hover {
   color: var(--accent-color);
