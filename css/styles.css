@@ -165,6 +165,16 @@ section {
   color: var(--accent-color);
 }
 
+.address::before a {
+  width: 20px;
+  height: 20px;
+  background-color: #2196f3;
+  margin-right: 10px;
+  content: "";
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+}
+
 /*Header*/
 .hero-container {
   display: block;
@@ -260,6 +270,33 @@ section {
   padding: 0;
   margin: 0;
   column-gap: 30px;
+}
+
+.list-item::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.list-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.list-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+.list-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .main-list-item {
@@ -390,6 +427,8 @@ section {
 
 .client-boxes {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .box {
@@ -437,10 +476,6 @@ section {
   background-position: center;
 }
 
-/* .box:hover {
-  color: var(--accent-color);
-} */
-
 /*Footer*/
 .footer {
   background-color: var(--hero-background-color);
@@ -480,6 +515,19 @@ section {
 .footer-address {
   font-style: normal;
   margin-top: 9px;
+}
+
+.footer-icon-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /*Buttons*/
@@ -524,6 +572,11 @@ section {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
